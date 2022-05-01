@@ -1,0 +1,16 @@
+body {
+    background-color: azure;
+}
+
+.test-red {
+    background-color: red;
+}
+
+.calculator-title {
+    text-align: center;
+}
+
+.calculator-container {
+    background-color: #DAF7A6;
+    border-radius: 10px;
+}
