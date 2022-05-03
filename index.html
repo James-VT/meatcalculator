@@ -22,15 +22,21 @@
                     <h1 class="calculator-title">Beef calculator</h1>
                     <form name="beef-form" id="beef-form" action="#">
                         <p>First of all, what's your cut?</p>
-                        <select name="beef-cut" id="beef-cut">
+                        <select class="form-select" name="beef-cut" id="beef-cut">
+                            <option value="beef-topside" selected="selected">Beef topside</option>
+                            <option value="fillet" selected="selected">Fillet</option>
                             <option value="beef-topside" selected="selected">Beef topside</option>
                         </select>
+                        <br>
                         <p>Sounds delicious! How do you want it cooked?</p>
-                        <select name="how-cooked" id="how-cooked">
-                            <option value="rare" selected="selected">Rare</option>
-                            <option value="medium" selected="#">Medium</option>
-                            <option value="well-done" selected="#">Well done</option>
+                        <select class="form-select" name="how-cooked" id="how-cooked">
+                            <option value="rare" selected>Rare</option>
+                            <option value="medium">Medium</option>
+                            <option value="well-done">Well done</option>
                         </select>
+                        <br>
+                        <p>Excellent choice. Now, what's the weight of your cut?</p>
+                        <input type="number" placeholder="1.0" step="0.01" min="0.01" max="10"> kg
                     </form>
                 </section>
             </div>
