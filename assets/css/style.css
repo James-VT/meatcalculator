@@ -14,3 +14,7 @@ body {
     background-color: #DAF7A6;
     border-radius: 10px;
 }
+
+.calculate-button-style {
+    margin-bottom: 20px;
+}
