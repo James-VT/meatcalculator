@@ -30,8 +30,15 @@
                         </select>
                         <br>
                         <p>Excellent choice. Now, what's the weight of your cut?</p>
-                        <div>
-                            <input type="number" placeholder="1.0" step="0.01" min="0.01" max="10"> kg
+                        <div class="row g-1 align-items-center">
+                            <div class="col-auto">
+                                <input type="number" class="form-control weight-input" placeholder="1.0" step="0.01" min="0.01" max="10" aria-describedby="weight-unit-inline">
+                            </div>
+                            <div class="col-auto">
+                                <span id="weight-unit-inline" class="form-text">
+                                        Kgh
+                                </span>
+                            </div>
                         </div>
                         <br>
                         <p>Okay, how do you want it cooked?</p>
@@ -41,6 +48,11 @@
                             <option value="well-done">Well done</option>
                         </select>
                         <br>
+                        <div>
+                            <button class="button">
+                                Calculate
+                            </button>
+                        </div>
                     </form>
                 </section>
             </div>
