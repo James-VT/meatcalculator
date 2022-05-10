@@ -22,10 +22,10 @@
                     <h1 class="calculator-title">Beef calculator</h1>
                     <form name="beef-form" id="beef-form" action="#">
                         <p>First of all, what's your cut?</p>
-                        <select class="form-select" name="beef-cut" id="beef-cut">
-                            <option value="beef-topside" selected>Beef topside</option>
-                            <option value="fillet">Fillet</option>
-                            <option value="beef-topside">Rib on the bone</option>
+                        <select class="form-select" name="beef-cut" id="beef-cut" onChange="updateCutChoice()">
+                            <option value="beef-topside">Beef topside</option>
+                            <option value="fillet" selected>Fillet</option>
+                            <option value="rib-on-the-bone">Rib on the bone</option>
                             <option value="brisket">Brisket</option>
                         </select>
                         <br>
@@ -43,13 +43,13 @@
                         <br>
                         <p>Okay, how do you want it cooked?</p>
                         <select class="form-select" name="how-cooked" id="how-cooked">
-                            <option value="rare" selected>Rare</option>
+                            <option value="rare">Rare</option>
                             <option value="medium">Medium</option>
                             <option value="well-done">Well done</option>
                         </select>
                         <br>
                         <div>
-                            <button type="button" class="btn btn-success btn-lg calculate-button-style">
+                            <button type="button" class="btn btn-success btn-lg calculate-button-style" id="calculate-button">
                                 Calculate
                             </button>
                         </div>
