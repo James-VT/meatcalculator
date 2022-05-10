@@ -1,6 +1,6 @@
 let beefCut = document.getElementById("beef-cut");
 
-let beefCutChoice = beefCut.options[beefCut.selectedIndex].value;
+let beefCutChoice = ""
 
 // Set variables for weight input here, above cooking choices
 
@@ -17,13 +17,15 @@ calculateButton.addEventListener("click", calculate);
 // Change which option has the select tag in the html
 
 function updateCutChoice() {
-    let beefCutChoice = beefCut.options[beefCut.selectedIndex].value;
+    var beefCutChoice = beefCut.options[beefCut.selectedIndex].value;
     console.log(beefCutChoice);
+    return beefCutChoice;
 }
 
 // Calculate function
 
 function calculate() {
+    updateCutChoice();
     console.log(beefCutChoice);
     console.log(howCookedChoice);
 }
