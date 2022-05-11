@@ -2,9 +2,9 @@ let beefCut = document.getElementById("beef-cut");
 
 // Set variables for weight input here, above cooking choices
 
-let howCooked = document.getElementById("how-cooked");
+let cutWeight = document.getElementById("cut-weight");
 
-let howCookedChoice = howCooked.options[howCooked.selectedIndex].value;
+let howCooked = document.getElementById("how-cooked");
 
 const calculateButton = document.getElementById("calculate-button");
 
@@ -16,6 +16,9 @@ calculateButton.addEventListener("click", calculate);
 
 function calculate() {
     let beefCutChoice = beefCut.options[beefCut.selectedIndex].value;
+    let howCookedChoice = howCooked.options[howCooked.selectedIndex].value;
+    let cutWeightChoice = cutWeight.value;
     console.log(beefCutChoice);
+    console.log(cutWeightChoice);
     console.log(howCookedChoice);
 }
