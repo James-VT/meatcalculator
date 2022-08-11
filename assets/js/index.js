@@ -12,7 +12,7 @@ const calculateButton = document.getElementById("calculate-button");
 
 calculateButton.addEventListener("click", calculate);
 
-// Calculate function
+// Calculate function (these are all just testers for now)
 
 function calculate() {
     let beefCutChoice = beefCut.options[beefCut.selectedIndex].value;
