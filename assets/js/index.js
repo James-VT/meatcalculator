@@ -10,7 +10,7 @@ const calculateButton = document.getElementById("calculate-button");
 
 // Event listener for the calculation
 
-calculateButton.addEventListener("click", calculate);
+calculateButton.addEventListener("click", beefCutSelection);
 
 // Calculate function (these are all just testers for now)
 
@@ -21,4 +21,14 @@ function calculate() {
     console.log(beefCutChoice);
     console.log(cutWeightChoice);
     console.log(howCookedChoice);
+}
+
+function beefCutSelection() {
+    let howCookedSelected = howCooked.options[howCooked.selectedIndex].value;
+
+    if (howCookedSelected === "rare") {
+        console.log("rare chosen")
+    } else {
+        console.log("not rare")
+    }
 }
