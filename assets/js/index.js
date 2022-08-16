@@ -21,7 +21,7 @@ function calculate() {
     console.log(beefCutChoice);
     console.log(cutWeightChoice);
     console.log(howCookedChoice);
-}
+};
 
 function beefCutSelection() {
     let howCookedSelected = howCooked.options[howCooked.selectedIndex].value;
@@ -31,4 +31,4 @@ function beefCutSelection() {
     } else {
         console.log("not rare")
     }
-}
+};
