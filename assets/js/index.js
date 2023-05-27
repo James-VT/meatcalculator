@@ -10,7 +10,7 @@ const calculateButton = document.getElementById("calculate-button");
 
 // Event listener for the calculation
 
-calculateButton.addEventListener("click", beefCutSelection);
+calculateButton.addEventListener("click", calculate);
 
 // Calculate function (these are all just testers for now)
 
