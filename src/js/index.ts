@@ -12,17 +12,6 @@ const calculateButton = document.getElementById("calculate-button");
 
 calculateButton?.addEventListener("click", calculate);
 
-// Calculate function (these are all just testers for now)
-
-function calculate() {
-    let beefCutChoice = beefCut?.options[beefCut.selectedIndex].value;
-    let howCookedChoice = howCooked?.options[howCooked.selectedIndex].value;
-    let cutWeightChoice = cutWeight?.value;
-    console.log(beefCutChoice);
-    console.log(cutWeightChoice);
-    console.log(howCookedChoice);
-};
-
 function beefCutSelection() {
     let howCookedSelected = howCooked?.options[howCooked.selectedIndex].value;
 
@@ -31,4 +20,16 @@ function beefCutSelection() {
     } else {
         console.log("not rare")
     }
+};
+
+// Calculate function (these are all just testers for now)
+
+function calculate() {
+    let beefCutChoice = beefCut?.options[beefCut.selectedIndex].value;
+    let howCookedChoice = howCooked?.options[howCooked.selectedIndex].value;
+    let cutWeightChoice = cutWeight?.value;
+    beefCutSelection();
+    console.log(beefCutChoice);
+    console.log(cutWeightChoice);
+    console.log(howCookedChoice);
 };
